@@ -61,6 +61,20 @@ dependencies {
 
     implementation(libs.retrofit2.converter.gson)
     implementation(libs.activity.ktx)
+
+    // navigation component
+    implementation (libs.androidx.navigation.fragment.ktx)
+    implementation (libs.androidx.navigation.ui.ktx)
+
+
+    // room
+    implementation(libs.androidx.room.runtime)
+    kapt(libs.androidx.room.compiler)
+    annotationProcessor(libs.androidx.room.compiler)
+    implementation (libs.androidx.room.ktx)
+
+    // glide
+    implementation (libs.glide)
 }
 
 // Allow references to generated code

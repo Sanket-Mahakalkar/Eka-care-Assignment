@@ -7,7 +7,7 @@ import androidx.lifecycle.LifecycleObserver
 import androidx.viewbinding.ViewBinding
 
 abstract class BaseActivity<VB: ViewBinding, VM: BaseViewModel<*>>
-    (private val layout: Int): AppCompatActivity(), LifecycleObserver {
+    (private val layout: Int): AppCompatActivity() {
 
     abstract val viewModel: VM
 

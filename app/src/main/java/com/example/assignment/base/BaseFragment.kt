@@ -16,7 +16,7 @@ import com.example.assignment.R
 
 abstract class BaseFragment<VB: ViewBinding, VM: BaseViewModel<*>> (
     private val layout: Int
-): Fragment(), LifecycleObserver {
+): Fragment() {
 
     abstract val viewModel: VM
 
